@@ -1,7 +1,8 @@
 import { useState } from "react"
 
 //Este sería el hijo
-export function TwitterFollowCard ({children, userName = 'Unknown', name, avatar, initialIsFollowing}) {
+// eslint-disable-next-line react/prop-types
+export function TwitterFollowCard ({children, userName = 'Unknown', avatar, initialIsFollowing}) {
     const [isFollowing, setIsFollowing] = useState(initialIsFollowing)
 
     const text = isFollowing ? 'Siguiendo' : 'Seguir'
